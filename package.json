@@ -1,5 +1,5 @@
 {
-  "name": "turbine-service-always-up",
+  "name": "turbine-services-always-up",
   "version": "1.0.0",
   "description": "Module for turbine framework",
   "main": "dist/index.js",
@@ -14,17 +14,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ctoesca/turbine-service-always-up"
+    "url": "git+https://github.com/ctoesca/turbine-services-always-up"
   },
   "keywords": [
-    "turbine","service-always-up"
+    "turbine","services-always-up"
   ],
   "author": "Christophe Toesca <christophe.toesca@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ctoesca/turbine-service-always-up/issues"
+    "url": "https://github.com/ctoesca/turbine-services-always-up/issues"
   },
-  "homepage": "https://github.com/ctoesca/turbine-service-always-up#readme",
+  "homepage": "https://github.com/ctoesca/turbine-services-always-up#readme",
   "devDependencies": {
     "@types/bluebird": "^3.5.19",
     "@types/bunyan": "^1.8.4",
@@ -40,7 +40,8 @@
     "run-sequence": "^1.2.2",
     "sinon": "^1.17.6",
     "tslint": "^4.0.2",
-    "typescript": "^2.1.4"
+    "typescript": "^2.1.4",
+    "typedoc": "^0.3.12"
   },
   "dependencies": {
     "turbine": "git+https://github.com/ctoesca/turbine",

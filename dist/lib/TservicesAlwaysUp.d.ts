@@ -1,4 +1,3 @@
-/// <reference types="bluebird" />
 import * as turbine from "turbine";
 import Ttimer = turbine.tools.Ttimer;
 import TwindowsServiceManager = turbine.tools.TwindowsServiceManager;
@@ -8,8 +7,8 @@ export declare class TservicesAlwaysUp extends turbine.services.TbaseService {
     startingService: boolean;
     windowsServiceManager: TwindowsServiceManager;
     timer: Ttimer;
-    constructor(name: any, config: any);
-    flatify(): Promise<{}>;
+    constructor(name: string, application: turbine.Tapplication, config: any);
+    flatify(): Promise<unknown>;
     getDefaultConfig(): {
         "active": boolean;
         "executionPolicy": string;
@@ -18,6 +17,6 @@ export declare class TservicesAlwaysUp extends turbine.services.TbaseService {
     };
     start(): void;
     stop(): void;
-    checkService(name: any): Promise<{}>;
+    checkService(name: any): Promise<unknown>;
     onTimer(): void;
 }

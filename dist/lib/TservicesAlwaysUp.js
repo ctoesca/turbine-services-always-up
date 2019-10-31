@@ -5,8 +5,8 @@ var Ttimer = turbine.tools.Ttimer;
 var TwindowsServiceManager = turbine.tools.TwindowsServiceManager;
 const Promise = require("bluebird");
 class TservicesAlwaysUp extends turbine.services.TbaseService {
-    constructor(name, config) {
-        super(name, config);
+    constructor(name, application, config) {
+        super(name, application, config);
         this.stoppingService = false;
         this.startingService = false;
         this.windowsServiceManager = new TwindowsServiceManager();
